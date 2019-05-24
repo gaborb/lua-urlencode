@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  lua:
+    build:
+      context: .
+      dockerfile: ./docker/lua/Dockerfile
+    volumes:
+      - "./src:/home/docker/src"
+      - "./spec:/home/docker/spec"
